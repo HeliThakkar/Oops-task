@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Oops Task</h1>
+
+    <script>
+
+        // 1.Hospitality
+        class Hospitality {
+            constructor(menagement , services){
+                this.menagement = menagement
+                this.services = services
+            }
+        }
+
+        let hospitaldata = new Hospitality("Meetings and events" , "food and beverage services" )
+        console.log(hospitaldata);
+        
+        let hospitaldata1 = new Hospitality("Recreation" , "pesents rooms" )
+        console.log(hospitaldata1);
+
+        let hospitaldata2 = new Hospitality("Travel and tourism " , "Security and Safety" )
+        console.log(hospitaldata2);
+        
+      
+        // 2.bank menagement systems 
+        class Bank_menagement_systems {
+            constructor(Bank_names, Human_Resource_Management ){
+               this.Bank_names = Bank_names
+               this.Human_Resource_Management  = Human_Resource_Management              
+            }
+        } 
+
+        let system = new  Bank_menagement_systems ("Sbi" , "TalentHub")
+        console.log(system);
+
+        let system1 = new  Bank_menagement_systems ("Bob" , "PeoplePulse")
+        console.log(system1);
+
+        let system2 = new  Bank_menagement_systems ("Kotak" , "HRNavigator")
+        console.log(system2);
+
+        // 3.animals 
+        class Animals {
+             constructor(Animals_names , Animals_types){
+               this.Animals_names = Animals_names
+               this.Animals_types = Animals_types
+             }
+        }
+
+        let animalsdata1 = new Animals( "Rusty" , "horse" )
+        console.log(animalsdata1); 
+       
+        let animalsdata2 = new Animals( "Buttercup" ,"rabbit"  )
+        console.log(animalsdata1); 
+        
+        let animalsdata3 = new Animals( "Zara" , "lion"  )
+        console.log(animalsdata1); 
+
+         // 4.student portel 
+         class Student_portel {
+              detail(){
+                console.log(this.name);
+              }  
+              cours(){
+                 console.log(this.cours);
+              }
+              fil(givename){
+                  this.name = givename
+              }
+              fil1(givecours){
+                 this.cours = givecours
+              }
+        } 
+
+        let names = new Student_portel()
+         names.fil("Tops")
+         names.detail()
+         names.fil1("Web designing")
+         console.log(names);
+
+         // 5.Institute 
+          class Institute extends Student_portel {
+            
+        }
+       
+          let Institutes = new Institute()
+          Institutes.fil("CodeCraft Academy")
+          Institutes.detail()
+          Institutes.fil1("Software development")
+          console.log(Institutes);
+
+     
+
+
+    </script>
+    
+</body>
+</html>
